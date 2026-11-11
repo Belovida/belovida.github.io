@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1727">
+  <meta name="description" content="Belovida Games is an independent game studio by Andrei Belov. Discover fantasy strategy, mysteries and imaginative indie games.">
+  <title>Belovida Games — Indie games with a twist</title>
+  <style>
+    :root {color-scheme:dark;--bg:#0b1727;--surface:#10253a;--line:#294556;--text:#ecf7fb;--muted:#b0c5d0;--accent:#74ead5}
+    * {box-sizing:border-box}
+    body {margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(ellipse at 80% 0%,#1c5060 0%,transparent 38%),var(--bg)}
+    a {color:inherit;text-decoration:none}
+    a:focus-visible {outline:3px solid var(--accent);outline-offset:3px}
+    .container {width:min(1080px,calc(100% - 40px));margin-inline:auto}
+    header {border-bottom:1px solid #ffffff17}
+    nav {min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand {display:flex;align-items:center;gap:12px;font-size:19px;font-weight:800;letter-spacing:.01em}
+    .logo {display:grid;place-items:center;width:42px;height:42px;border:2px solid var(--accent);color:var(--accent);border-radius:12px;font-size:25px}
+    .nav-links {display:flex;gap:22px;font-size:14px;color:var(--muted)}
+    .nav-links a:hover,.footer-links a:hover {color:var(--accent)}
+    .hero {display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:38px;padding:95px 0 85px}
+    .eyebrow {color:var(--accent);font-size:12px;letter-spacing:.23em;text-transform:uppercase;font-weight:800}
+    h1 {font-size:clamp(42px,6.5vw,76px);line-height:1.06;letter-spacing:-.05em;margin:17px 0}
+    h1 span {color:var(--accent)}
+    .lead {color:var(--muted);font-size:19px;max-width:580px}
+    .cta {display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}
+    .btn {display:inline-flex;justify-content:center;align-items:center;padding:13px 20px;border-radius:12px;font-weight:750;background:var(--accent);color:#09232a;transition:transform .16s ease}
+    .btn:hover {transform:translateY(-2px)}
+    .btn.alt {background:#ffffff0b;color:var(--text);border:1px solid var(--line)}
+    .visual {width:100%;aspect-ratio:1;display:grid;place-items:center;position:relative}
+    .visual::before {content:"";position:absolute;border-radius:50%;inset:12%;border:2px solid #74ead546;box-shadow:0 0 0 34px #74ead50d,0 0 0 68px #74ead509}
+    .ring {position:absolute;width:42%;height:66%;border:16px solid var(--accent);border-radius:49% 49% 25% 25%;transform:rotate(-26deg) translateX(-28%);box-shadow:0 0 32px #74ead538}
+    .ring.second {border-color:#8aa8f1;transform:rotate(26deg) translateX(28%)}
+    .center-mark {display:grid;place-items:center;position:relative;background:#0b2135;border-radius:28px;border:1px solid #ffffff44;width:112px;height:112px;font-size:70px;font-weight:900;box-shadow:0 15px 50px #0007}
+    section {padding:25px 0 78px}
+    h2 {font-size:35px;letter-spacing:-.03em;line-height:1.2;margin:11px 0 12px}
+    .section-intro {color:var(--muted);max-width:650px;margin-bottom:30px}
+    .cards {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .card {padding:24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(160deg,#18374a,#102238);display:flex;flex-direction:column;min-height:260px}
+    .card-icon {font-size:42px}
+    .card h3 {font-size:21px;line-height:1.25;margin:16px 0 7px}
+    .card p {color:var(--muted);margin:0 0 24px;font-size:14px;flex:1}
+    .card a {font-size:14px;color:var(--accent);font-weight:700}
+    .about {padding:30px;border:1px solid var(--line);border-radius:20px;background:#ffffff08}
+    .about p {margin:0;color:var(--muted)}
+    footer {padding:30px 0 45px;border-top:1px solid #ffffff18;color:var(--muted);font-size:14px}
+    .footer-links {display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:70px 0 40px}.visual{display:none}.cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:580px){.nav-links{gap:12px;font-size:12px}.brand{font-size:16px}.cards{grid-template-columns:1fr}.card{min-height:220px}.lead{font-size:17px}h2{font-size:29px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="/" aria-label="Belovida Games home"><span class="logo" aria-hidden="true">B</span> Belovida Games</a>
+      <div class="nav-links"><a href="#games">Games</a><a href="#about">About</a><a href="https://belovida.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Independent game development</div>
+        <h1>Small studio.<br><span>Big worlds.</span></h1>
+        <p class="lead">Welcome to Belovida Games — an independent game studio exploring strategy, mystery, adventure and unexpected genre combinations.</p>
+        <div class="cta">
+          <a class="btn" href="#games">Explore our games</a>
+          <a class="btn alt" href="https://belovida.itch.io/" target="_blank" rel="noopener noreferrer">Visit our itch.io page</a>
+        </div>
+      </div>
+      <div class="visual" aria-hidden="true"><div class="ring"></div><div class="ring second"></div><div class="center-mark">B</div></div>
+    </div>
+    <section id="games" aria-labelledby="games-heading">
+      <div class="eyebrow">Featured titles</div>
+      <h2 id="games-heading">Discover the games</h2>
+      <p class="section-intro">From magical checkers to atmospheric stories — explore some of the worlds created by Belovida Games.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">♟️</div>
+          <h3>Checkers: Magic of the Order</h3>
+          <p>Classic checkers meets fantasy roguelike strategy. Play on Android.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.andreybelov.checkersrogue" target="_blank" rel="noopener noreferrer">Get it on Google Play →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🌘</div>
+          <h3>Zarechensk: The Town That Forgot</h3>
+          <p>Explore the unsettling mysteries of a seemingly ordinary post-Soviet town.</p>
+          <a href="https://belovida.itch.io/" target="_blank" rel="noopener noreferrer">Find it on itch.io →</a>
+        </article>
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">🪞</div>
+          <h3>Beyond the Self</h3>
+          <p>A psychological visual novel about identity, choices and the world beyond the mirror.</p>
+          <a href="https://belovida.itch.io/" target="_blank" rel="noopener noreferrer">Find it on itch.io →</a>
+        </article>
+      </div>
+    </section>
+    <section id="about" aria-labelledby="about-heading">
+      <div class="eyebrow">About the studio</div>
+      <h2 id="about-heading">Made with curiosity</h2>
+      <div class="about"><p>Belovida Games is an independent game-development brand founded by Andrei Belov. Our projects bring together distinctive ideas, accessible gameplay and memorable worlds. Follow our releases and experiments on itch.io and Google Play.</p></div>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-links">
+      <span>© 2026 Belovida Games · Independent game development</span>
+      <span><a href="https://github.com/Belovida" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://belovida.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></span>
+    </div>
+  </footer>
+</body>
+</html>
